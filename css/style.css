@@ -1,0 +1,356 @@
+/* CSS STYLES */
+
+
+
+/* LOGO */
+/* div.logo {
+    width: 35vw;
+    min-width: 350px;
+    text-align: center;
+    margin-bottom: 12px;
+    padding: 0.5rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 22px 0 22px 0;
+}
+div.logo span {
+    font-family: "Lobster", cursive;
+    font-size: 80%;
+    letter-spacing: 0.4rem;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+div.logo > img {
+    width: 14%;
+    vertical-align: middle;
+} */
+/* HEADER */
+/* header {
+    position: relative;
+}
+header div.slogan {
+    background-color: #000;
+    color: #fff;
+    padding: 0 0 7px 0;
+    margin: 0;
+}
+header div.slogan p {
+    padding: 0 1.5rem 0 0;
+} */
+/* NAVBAR */
+div.navUp {
+    text-align: right;
+}
+div.navUp i {
+    color: brown;
+    cursor: pointer;
+}
+div.navPos {
+    background-color: #000;
+    width: 3vw;
+    height: 170px;
+    position: fixed;
+    /*left right bottom top*/
+    right: 0;
+    top: 40vh;
+    padding: 0 2vw 0 1vw;
+    border-radius: 25px 0 0 25px;
+    display: none;
+}
+div.navPos ul {
+    padding: 0;
+    list-style: none;
+}
+div.navPos ul li {
+    margin: 0 0 10px 0;
+    text-align: left;
+    padding: 0 0 0 10px;
+}
+div.navPos ul li a {
+    font-size: 0.6em;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+nav {
+    margin: 0 0 0 0;
+}
+nav ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+nav.nav1 {
+    position: sticky;
+    top: 0;
+}
+nav.nav1 ul {
+    background-color: #dd2b2b;
+}
+nav.nav1 ul li a {
+    display: inline-block;
+    margin: 0 0 0 0;
+    text-decoration: none;
+    background-color: #dd2b2b;
+    padding: 20px 22px 12px 22px;
+    color: #fff;
+}
+nav.nav1 a:hover {
+    text-decoration: overline #fff dotted 4px;
+}
+
+nav.nav2 ul li a {
+    display: inline-block;
+    margin: 0 0.2vw 0 0;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+    padding: 20px 22px 12px 22px;
+    color: #999;
+    border: 2px dashed #eee;
+    border-top-width: 0;
+}
+nav.nav2 a:hover {
+    color: #000;
+    border-bottom-color: #999;
+}
+
+/* TAGS */
+
+
+figure {
+    padding: 20px;
+}
+header * {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+audio {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h2 {
+    color: blue;
+    margin: 0 0 10px 0;
+}
+ul.listaInfo {
+    list-style-image: url(../../images/png/garfo_faca_32.png);
+}
+ul.listaInfo li {
+    padding: 0 0 0 10px;
+}
+h2 + span {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: brown;
+    font-weight: bold;
+    display: block;
+    text-align: right;
+}
+
+p {
+    text-align: justify;
+    text-indent: 1.3rem;
+    text-align-last: right;
+    letter-spacing: 0.03rem;
+    word-spacing: 0.03rem;
+    line-height: 1.4rem;
+    white-space: wrap;
+}
+p::first-letter {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+table{
+    border:1px solid #ccc;
+    width:90%;
+    margin:80px auto;
+    border-collapse: collapse;
+    border-bottom-width: 4px;
+}
+table th{
+    text-align: left;
+}
+table td,table th{
+    border:1px solid #ccc;
+    padding:1%;
+}
+table tr:nth-child(even){
+    background-color: #eee;
+    font-weight:bold;
+}
+table tr:nth-of-type(2){
+    background-color:#dd2b2b;
+    color:#fff;
+}
+
+/* CLASSES */
+.lobster {
+    font-family: "Lobster", cursive;
+}
+.h2Color {
+    color: #999;
+    text-align: right;
+    font-family: "Courier New", Courier, monospace;
+}
+.container01 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container02 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.container02 div {
+    padding: 4%;
+}
+.container02 div img {
+    opacity: 0.4;
+    transition: all 0.6s;
+}
+.container02 div img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.container02 div p {
+    text-align: left;
+    line-height: normal;
+    word-spacing: normal;
+}
+.container02 div:hover p {
+    color: red !important;
+}
+
+.container02 div p::first-letter {
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+div#imgFooter div span{
+    position:absolute;
+    display: block;
+    width:100%;
+    top:50%;
+    background-color: rgba(255,255,255,0.8);
+    text-align:center;
+    padding:10px 0;
+}
+div#imgFooter div{
+    background-size:cover;
+    width:30vh;
+    height:30vh;
+    border-radius:50%;
+    border:3px dashed #fff;
+    margin:80px auto;
+    position: relative;
+}
+div#imgFooter div:nth-of-type(1){
+    background-image: url(../../images/coxinha-brasileira.jpg);
+    box-shadow:12px 12px 3px #dd2b2b;
+}
+div#imgFooter div:nth-of-type(2){
+    background-image: url(../../images/frutas-e-vegetais.jpg);
+    box-shadow:-12px -12px 3px #dd2b2b;
+}
+/* ARTICLES */
+article,footer {
+    min-height: 100vh;
+    padding: 80px 1% 0 1%;
+    background-color: rgba(255,255,255,0.8);
+}
+article#pratos p {
+    color: #999;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+article#pratos table td p {
+    color: #000;
+}
+article#pratos p:active ~ table {
+    border: dashed 2px green;
+}
+article#pratos p:active {
+    color: red;
+}
+article#frutosDoMar{
+    background-image: url(../../images/recortes/bg_sea.jpg);
+    background-size: cover;
+    position:relative;
+    overflow: hidden;
+}
+article#frutosDoMar span{
+    position:absolute;
+    top:40%;
+    left:40%;
+    font-size:5rem;
+    color:#fff;
+    font-family:"Lobster",cursive;
+    line-height:5rem;
+    text-shadow:2px 2px 3px #dd2b2b;
+    z-index:2
+}
+article#frutosDoMar img.caranguejo{
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:scale(0.2);
+    animation: caranguejo 3s forwards;
+    animation-delay: 3s;
+    z-index:1;
+}
+article#frutosDoMar img.peixe{
+    position:absolute;
+    left:-30%;
+    animation: peixe 10s forwards;
+    animation-delay: 2s;
+}
+/* FORMS */
+form#formReserva{
+    width:80%;
+    margin:80px auto !important;
+}
+form#formReserva ul{
+    list-style: none;
+}
+datalist,textarea,input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=date]):not([type=image]){
+    width:90%;
+    padding:2%;
+    font-size:1.2rem;
+     border-radius: 12px;
+     border:none;
+     box-shadow:1px 1px  2px #eee, -1px -1px 2px #eee;
+}
+textarea:focus,input:focus{
+ outline:none;
+ background-color:rgba(250, 235, 215,0.4)
+}
+label{
+    display: block;
+    margin:10px 0;
+    padding:0 0 0 10px
+}
+fieldset{
+    border:1px dashed #eee;
+}
+legend{
+    text-align:center;
+    padding:0 10px;
+}
+select {
+    font-size: 0.88em;
+}
+input[type="radio"] {
+    accent-color: green;
+}
+input[type="checkbox"]:checked + span {
+    color: blue;
+}
+textarea {
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -o-border-radius: 12px;
+    -ms-border-radius: 12px;
+    border-radius: 12px;
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ristorante - Você sempre bem vindo</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap"
+            rel="stylesheet"
+        />
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/recursos.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./src/css/style.css" />
+    </head>
+    <body>
+        <header class="containerBox header header-bgHome header-heightMiddle">
+            <div class="container">
+                <div class="logo">
+                    <p class="logo__slogan text-white px-1">RISTORANTE</p>
+                </div>
+                <div class="socialMedia">
+                    <ul class="socialMedia__icones container">
+                        <li class="socialMedia__item">
+                            <a href="#" class="socialMedia__link text-white">
+                                <i class="socialMedia__icon fab fa-facebook fa-2x mx-1"></i>
+                            </a>
+                        </li>
+                        <li class="socialMedia__item">
+                            <a href="#" class="socialMedia__link text-white">
+                                <i class="socialMedia__icon fab fa-instagram fa-2x mx-1"></i>
+                            </a>
+                        </li>
+                        <li class="socialMedia__item">
+                            <a href="#" class="socialMedia__link text-white">
+                                <i class="socialMedia__icon fab fa-whatsapp fa-2x mx-1"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul class="navbar__nav container p-1">
+                    <li class="navbar__item">
+                        <a href="index.html" class="navbar__link">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Nossos Pratos</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Sobre</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="reservas.html" class="navbar__link">Reservas</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="carrinho.html" class="navbar__link">Carrinho</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+
+<div class="boxReserva">
+
+ <h2 class="h2Color text-center">
+                        Reserve nosso espaço para o seu aniversário
+                    </h2>
+                    <span class="text-center">Descontos incríveis para você fazer a sua festa</span>
+                    <form
+                        id="formReserva"
+                        action=""
+                        method="post"
+                        enctype="multipart/form-data"
+                    >
+                        <fieldset>
+                            <legend>Preencha todos os campos</legend>
+                            <ul>
+                                <li>
+                                    <label for="nome">Nome</label>
+                                    <input
+                                        type="text"
+                                        id="nome"
+                                        name="nome"
+                                        maxlength="30"
+                                        size="50"
+                                        required
+                                    />
+                                </li>
+                                <li>
+                                    <label for="email">Email</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        size="50"
+                                        placeholder="Coloque seu melhor email"
+                                        required
+                                    />
+                                </li>
+                                <li>
+                                    <label for="convidados">Convidados</label>
+                                    <input
+                                        type="number"
+                                        id="convidados"
+                                        name="convidados"
+                                        min="1"
+                                        max="10"
+                                        value="10"
+                                        readonly
+                                        required
+                                    />
+                                </li>
+                                <hr />
+                                <li>
+                                    <label for="entrada"
+                                        >Escolha sua entrada</label
+                                    >
+                                    <input
+                                        list="entrada_opt"
+                                        name="entrada"
+                                        id="entrada"
+                                    />
+                                    <datalist id="entrada_opt">
+                                        <option
+                                            value="Caldo de Mandioquinha"
+                                        ></option>
+                                        <option
+                                            value="Caprese no Palito"
+                                        ></option>
+                                        <option
+                                            value="Patê de Azeitonas"
+                                        ></option>
+                                    </datalist>
+                                </li>
+                                <li>
+                                    <label for="aniversariante"
+                                        >Coloque a foto do aniversariante</label
+                                    >
+                                    <input
+                                        type="file"
+                                        id="aniversariante"
+                                        name="aniversariante"
+                                        accept="image/png"
+                                    />
+                                </li>
+                                <li>
+                                    <label for="tipo_comida">Cozinha</label>
+                                    <select name="cozinha" id="cozinha">
+                                        <option value="...">...</option>
+                                        <!-- <option value="brasileira">Brasileira</option> -->
+                                        <optgroup label="Brasileira">
+                                            <option value="feijoada">
+                                                Feijoada
+                                            </option>
+                                            <option value="virado">
+                                                Virado a Paulista
+                                            </option>
+                                        </optgroup>
+                                        <!-- <option value="italiana">Italiana</option> -->
+                                        <optgroup label="Italiana">
+                                            <option value="Lasanha">
+                                                Lazanha
+                                            </option>
+                                            <option value="Risotto">
+                                                Risotto
+                                            </option>
+                                        </optgroup>
+                                        <option value="francesa">
+                                            Francesa
+                                        </option>
+                                    </select>
+                                </li>
+                                <hr />
+                                <li>
+                                    <label for="data_niver"
+                                        >Data do aniversário</label
+                                    >
+                                    <input
+                                        type="date"
+                                        name="data_niver"
+                                        id="data_niver"
+                                    />
+                                </li>
+                                <li>
+                                    <label for="cor_festa">Cor do tema</label>
+                                    <input
+                                        type="color"
+                                        name="cor_festa"
+                                        id="cor_festa"
+                                        value="#ff00ff"
+                                    />
+                                </li>
+                                <hr />
+                                <li>
+                                    <label for="servicos"
+                                        >Serviços Adicionais</label
+                                    ><br />
+                                    <input
+                                        style="accent-color: red"
+                                        type="checkbox"
+                                        name="servicos"
+                                        id="musico"
+                                        checked
+                                    />
+                                    <span>Músico</span>
+                                    <input
+                                        type="checkbox"
+                                        name="servicos"
+                                        id="danca_do_ventre"
+                                    />
+                                    <span>Dança do Ventre</span>
+                                    <input
+                                        type="checkbox"
+                                        name="servicos"
+                                        id="magico"
+                                    />
+                                    <span>Mágico</span>
+                                </li>
+                                <hr />
+                                <li>
+                                    <label for="bolo"
+                                        >Bolo do aniversariante</label
+                                    ><br />
+                                    <input
+                                        type="radio"
+                                        name="bolo"
+                                        id="bolo_proprio"
+                                    />
+                                    Bolo próprio
+                                    <input
+                                        checked
+                                        type="radio"
+                                        name="bolo"
+                                        id="bolo_nosso"
+                                    />
+                                    Bolo Nosso Restaurante
+                                </li>
+                                <hr />
+                                <li>
+                                    <label for="obs">Observações</label> <br />
+                                    <textarea
+                                        name="obs"
+                                        id="obs"
+                                        cols="30"
+                                        rows="10"
+                                    ></textarea>
+                                </li>
+                                <li>
+                                    <input
+                                        type="image"
+                                        src="../images/png/btn_bolo.png"
+                                        alt="Enviar a mensagem"
+                                        width="200"
+                                    />
+                                    <!-- <input type="submit" value="Confirmar o Envio">                              -->
+                                    <!-- <button>Confirmar</button> -->
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+</div>
+        </main>
+        <footer>
+            <div class="footer">
+                  <div class="footer__socialMedia">
+                    <ul class="footer__socialMedia__icones container">
+                        <li class="footer__socialMedia__item">
+                            <a href="#" class="footer__socialMedia__link text-white">
+                                <i class="footer__socialMedia_icon fab fa-facebook fa-2x mx-1"></i>
+                            </a>
+                        </li>
+                        <li class="footer__socialMedia__item">
+                            <a href="#" class="footer__socialMedia__link text-white">
+                                <i class="footer__socialMedia_icon fab fa-instagram fa-2x mx-1"></i>
+                            </a>
+                        </li>
+                        <li class="footer__socialMedia__item">
+                            <a href="#" class="footer__socialMedia__link text-white">
+                                <i class="footer__socialMedia_icon fab fa-whatsapp fa-2x mx-1"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__contato">
+                      <div class="logo">
+                            <p class="logo__slogan text-white px-1">RISTORANTE</p>
+                        </div>
+                    <div class="contato__info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam sint error eos labore laboriosam unde, hic ipsum maxime ullam fugit?
+                    </div>
+                </div>
+                 <nav class="footer__navbar">
+                <ul class="footer__navbar__nav container p-1">
+                    <li class="footer__navbar__item">
+                        <a href="#" class="footer__navbar__link">Home</a>
+                    </li>
+                    <li class="footer__navbar__item">
+                        <a href="#" class="footer__navbar__link">Nossos Pratos</a>
+                    </li>
+                    <li class="footer__navbar__item">
+                        <a href="#" class="footer__navbar__link">Sobre</a>
+                    </li>
+                    <li class="footer__navbar__item">
+                        <a href="#" class="footer__navbar__link">Reservas</a>
+                    </li>
+                    <li class="footer__navbar__item">
+                        <a href="#" class="footer__navbar__link">Carrinho</a>
+                    </li>
+                    <li class="footer__navbar__item">
+                        <a href="#" class="footer__navbar__link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </footer>
+    </body>
+</html>

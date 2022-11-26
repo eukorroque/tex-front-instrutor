@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ristorante - Você sempre bem vindo</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap"
+            rel="stylesheet"
+        />
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/recursos.css">
+    <script src="js/exJS_20.js" async></script>
+</head>
+<style>
+    .hide {
+        display: none;
+    }
+</style>
+
+
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./src/css/style.css" />
+    </head>
+    <body>
+        <header class="containerBox header header-bgHome header-heightMiddle">
+            <div class="container">
+                <div class="logo">
+                    <p class="logo__slogan text-white px-1">RISTORANTE</p>
+                </div>
+                <div class="socialMedia">
+                    <ul class="socialMedia__icones container">
+                        <li class="socialMedia__item">
+                            <a href="#" class="socialMedia__link text-white">
+                                <i class="socialMedia__icon fab fa-facebook fa-2x mx-1"></i>
+                            </a>
+                        </li>
+                        <li class="socialMedia__item">
+                            <a href="#" class="socialMedia__link text-white">
+                                <i class="socialMedia__icon fab fa-instagram fa-2x mx-1"></i>
+                            </a>
+                        </li>
+                        <li class="socialMedia__item">
+                            <a href="#" class="socialMedia__link text-white">
+                                <i class="socialMedia__icon fab fa-whatsapp fa-2x mx-1"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul class="navbar__nav container p-1">
+                    <li class="navbar__item">
+                        <a href="index.html" class="navbar__link">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Nossos Pratos</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Sobre</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="reservas.html" class="navbar__link">Reservas</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="carrinho.html" class="navbar__link">Carrinho</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+<div id="box01" class="boxPadrao bordaPadrao sombraPadrao w-75">
+            <span id="msgCarrinho" class="mb-2 d-block"></span>
+            <p class="labelPadrao textCenter textBold" style="background-color:#f1f1f1">Carrinho de Compras</p>
+            <form id="form-carrinho">
+                <div class="row">
+                    <div class="col">
+                        <label for=""></label>
+                    </div>
+                    <div class="col">
+                        <label for="">Produto</label>
+                    </div>
+                    <div class="col">
+                        <label for="">Preço</label>
+                    </div>
+                    <div class="col">
+                        <label for="">Quantidade</label>
+                    </div>
+                    <div class="col">
+                        <label for="">Total</label>
+                    </div>
+                    <div class="col">
+                        <label for=""></label>
+                    </div>
+                    
+                </div>
+                <div id="itens-carrinho"></div>
+                <div class="row">
+                    <div class="right px-5 mx-5">
+                       <span>Total: </span><span id="totalCarrinho"></span>
+                    </div>
+                    <div class="col-sm-12">
+                        <div id="cupom" class="d-flex flex-start fw-bold">
+                            <p></p>
+                            <div class="mt-5 pt-5 d-flex flex-start">
+                                <label class="w-75 mx-4" for="">Aplicar Cupom de Desconto: </label>
+                                <input id='inputDesconto' class="w-50 inputPadrao bg-light px-3 text-uppercase fw-bold" type="text">
+                                <button id="btnCupom" type="button" class="w-50 mx-4 btn btnPadrao">Aplicar Cupom</button>
+                            </div>
+                        </div>
+                        <hr>
+            <button type="button" class="btn btnPadrao flex-start p-2 m-5" id="btnCheckout">Finalizar Compra</button>
+                    </div>
+                </div>
+            </form>
+            <p class="textCenter p-1 mtb-1 bgPadrao" id="mensagem"></p>
+        </div>
+
+        </main>
+        <footer>
+            <div class="footer">
+                  <div class="footer__socialMedia">
+                    <ul class="footer__socialMedia__icones container">
+                        <li class="footer__socialMedia__item">
+                            <a href="#" class="footer__socialMedia__link text-white">
+                                <i class="footer__socialMedia_icon fab fa-facebook fa-2x mx-1"></i>
+                            </a>
+                        </li>
+                        <li class="footer__socialMedia__item">
+                            <a href="#" class="footer__socialMedia__link text-white">
+                                <i class="footer__socialMedia_icon fab fa-instagram fa-2x mx-1"></i>
+                            </a>
+                        </li>
+                        <li class="footer__socialMedia__item">
+                            <a href="#" class="footer__socialMedia__link text-white">
+                                <i class="footer__socialMedia_icon fab fa-whatsapp fa-2x mx-1"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__contato">
+                      <div class="logo">
+                            <p class="logo__slogan text-white px-1">RISTORANTE</p>
+                        </div>
+                    <div class="contato__info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam sint error eos labore laboriosam unde, hic ipsum maxime ullam fugit?
+                    </div>
+                </div>
+                 <nav class="footer__navbar">
+                <ul class="footer__navbar__nav container p-1">
+                    <li class="footer__navbar__item">
+                        <a href="#" class="footer__navbar__link">Home</a>
+                    </li>
+                    <li class="footer__navbar__item">
+                        <a href="#" class="footer__navbar__link">Nossos Pratos</a>
+                    </li>
+                    <li class="footer__navbar__item">
+                        <a href="#" class="footer__navbar__link">Sobre</a>
+                    </li>
+                    <li class="footer__navbar__item">
+                        <a href="#" class="footer__navbar__link">Reservas</a>
+                    </li>
+                    <li class="footer__navbar__item">
+                        <a href="#" class="footer__navbar__link">Carrinho</a>
+                    </li>
+                    <li class="footer__navbar__item">
+                        <a href="#" class="footer__navbar__link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </footer>
+    </body>
+</html>

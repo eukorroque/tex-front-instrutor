@@ -1,0 +1,25 @@
+$color_1:#ff9999;
+@mixin flex-center{
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    @include flex-center
+}
+body{
+    color:khaki
+}
+ul{
+    li{
+        list-style: none;
+
+        a{
+            color:$color_1;
+            
+        &:hover{
+                text-transform:uppercase;
+            }
+        }
+    }
+}

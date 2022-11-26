@@ -1,0 +1,20 @@
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  color: khaki;
+}
+
+ul li {
+  list-style: none;
+}
+ul li a {
+  color: #ff9999;
+}
+ul li a:hover {
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=exemp%C4%BAo.css.map */

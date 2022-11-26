@@ -1,0 +1,264 @@
+* {
+  font-family: "Ropa Sans";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#card1 {
+  background-image: url(/images/produtos/beef-g66eb2a540_1920.jpg);
+  background-size: cover;
+}
+#card1 h2::before {
+  content: "Carne Grelhada";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card2 {
+  background-image: url(/images/produtos/breakfast-ga9b591474_1920.jpg);
+  background-size: cover;
+}
+#card2 h2::before {
+  content: "Bacon com Ovos";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card3 {
+  background-image: url(/images/produtos/noodles-7390775_1920.jpg);
+  background-size: cover;
+}
+#card3 h2::before {
+  content: "Penne a Bolonhesa";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card4 {
+  background-image: url(/images/produtos/potato-soup-2152265_1920.jpg);
+  background-size: cover;
+}
+#card4 h2::before {
+  content: "Sopa de Batatas";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card5 {
+  background-image: url(/images/produtos/rice-noodles-855077_1920.jpg);
+  background-size: cover;
+}
+#card5 h2::before {
+  content: "Sopa de Arroz";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card6 {
+  background-image: url(/images/produtos/salad-gf22844a91_1920.jpg);
+  background-size: cover;
+}
+#card6 h2::before {
+  content: "Salada Mix";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card7 {
+  background-image: url(/images/produtos/spare-ribs-7410906_1920.jpg);
+  background-size: cover;
+}
+#card7 h2::before {
+  content: "Costela Ribs";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card8 {
+  background-image: url(/images/produtos/sushi-354628_1920.jpg);
+  background-size: cover;
+}
+#card8 h2::before {
+  content: "Sushi";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card9 {
+  background-image: url(/images/produtos/taco-4709325_1920.jpg);
+  background-size: cover;
+}
+#card9 h2::before {
+  content: "Taco";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+.navbar__nav, .socialMedia__icones, .footer__navbar__nav, .footer__socialMedia__icones {
+  list-style: none;
+}
+
+.header {
+  min-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 90%;
+  position: relative;
+  background-image: url("/images/backgrounds/background_home.jpg");
+  background-size: 100%;
+  background-position-y: -300px;
+}
+
+.header-heightMiddle {
+  height: 300px;
+  border: 1px solid #000;
+}
+
+.logo__slogan {
+  font-size: 3rem;
+  text-shadow: 2px 2px 1px rgba(1, 1, 8, 0.6);
+}
+
+.navbar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.navbar__link {
+  color: #f1f806;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.navbar__link:hover {
+  color: #fff;
+}
+
+.servicos {
+  min-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.servicos__card {
+  width: 31%;
+  margin-bottom: 1rem;
+  height: 400px;
+  box-shadow: 8px 8px 10px #999;
+}
+
+.footer {
+  min-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(152, 88, 64, 0.5);
+}
+.footer__navbar {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(1, 1, 8, 0.6);
+}
+.footer__navbar__link {
+  text-decoration: none;
+  color: #fff;
+}
+.footer__navbar__nav {
+  flex-flow: column;
+}
+.footer__socialMedia__icones {
+  flex-flow: column;
+}
+.footer__socialMedia__item {
+  margin-bottom: 1rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.mx-1 {
+  margin: 0 1.2rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 1170px) {
+  .header,
+.navbar__nav,
+.servicos,
+.servicos__card {
+    flex-flow: column;
+    min-width: 100%;
+  }
+  .navbar {
+    z-index: 1;
+  }
+  .socialMedia {
+    z-index: 2;
+  }
+  .socialMedia__icones {
+    flex-flow: column;
+  }
+  .socialMedia__item {
+    margin: 1rem;
+  }
+  .footer {
+    flex-flow: column;
+    min-width: 100%;
+  }
+  .footer__navbar {
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+  .footer__socialMedia__icones {
+    flex-flow: row;
+    margin-bottom: 1rem;
+  }
+  .footer .logo__slogan, .footer .contato__info {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

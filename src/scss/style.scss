@@ -1,0 +1,141 @@
+@use "variaveis" as v;
+@use "mixins" as mx;
+@use "extends";
+
+.header {
+    @include mx.box;
+    background-image: url(mx.bgImage(v.$bgHome_1));
+    // background-image: url(v.$bgHome);
+    background-size: 100%;
+    background-position-y: -300px;
+}
+.header-heightMiddle {
+    height: 300px;
+    border: 1px solid #000;
+}
+.logo__slogan {
+    font-size: 3rem;
+    text-shadow: 2px 2px 1px rgba(1, 1, 8, 0.6);
+}
+.navbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: v.$bgColorNav;
+
+    &__nav {
+        @extend %list-none;
+    }
+
+    &__link {
+        color: v.$link;
+        text-transform: uppercase;
+        font-size: 1rem;
+        text-decoration: none;
+
+        &:hover {
+            color: v.$linkHover;
+        }
+    }
+}
+
+.socialMedia__icones {
+    @extend %list-none;
+}
+
+.servicos {
+    @include mx.box;
+    @include mx.flex-center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.servicos__card {
+    width: 31%;
+    // margin-right:0.6rem;
+    margin-bottom: v.$m1;
+    height: 400px;
+    box-shadow: 8px 8px 10px #999;
+}
+.footer {
+    @include mx.box;
+    @include mx.flex-center;
+    background-color: rgba(152, 88, 64, 0.5);
+
+    &__navbar {
+        @include mx.flex-center;
+        background-color: rgba(1, 1, 8, 0.6);
+        &__link {
+            text-decoration: none;
+            color: #fff;
+        }
+        &__nav {
+            @extend %list-none;
+            flex-flow: column;
+        }
+    }
+    &__socialMedia {
+        &__icones {
+            flex-flow: column;
+            @extend %list-none;
+        }
+        &__item {
+            margin-bottom: v.$m1;
+        }
+    }
+}
+.m-1 {
+    margin: v.$m1;
+}
+.mx-1 {
+    margin: v.$mx1;
+}
+.p-1 {
+    padding: v.$p1;
+}
+.text-white {
+    color: v.$linkHover;
+}
+.container {
+    @include mx.flex-center;
+}
+
+@media (max-width: 1170px) {
+    .header,
+    .navbar__nav,
+    .servicos,
+    .servicos__card {
+        flex-flow: column;
+        min-width: 100%;
+    }
+    .navbar {
+        z-index: 1;
+    }
+    .socialMedia {
+        z-index: 2;
+
+        &__icones {
+            flex-flow: column;
+        }
+        &__item {
+            margin: v.$m1;
+        }
+    }
+    .footer {
+        flex-flow: column;
+        min-width: 100%;
+        &__navbar {
+            justify-content: flex-start;
+            margin-bottom: v.$m1;
+        }
+        &__socialMedia {
+            &__icones {
+                flex-flow:row;
+                margin-bottom: v.$m1;
+            }
+        }
+        .logo__slogan,.contato__info{
+            padding-left:1.5rem;
+            margin-bottom:v.$m1;
+        }
+    }
+}
